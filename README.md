@@ -1,14 +1,5 @@
 # MTG Cards
 
-## Table of contents
-* [General information](https://github.com/TheFluyter/mtgcards#general-information)
-* [Technologies](https://github.com/TheFluyter/mtgcards#technologies)
-* [Launch](https://github.com/TheFluyter/mtgcards#launch)
-* [Features](https://github.com/TheFluyter/mtgcards#features)
-* [Project status](https://github.com/TheFluyter/mtgcards#project-status)
-* [Sources](https://github.com/TheFluyter/mtgcards#sources)
-* [Authors](https://github.com/TheFluyter/mtgcards#authors)
-
 ## General information
 An android application to keep track of life counters. Useful for card and board games, especially Magic: The Gatering. 
 
