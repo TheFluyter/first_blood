@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="180"
+        android:text="@string/stringLife1"
+        android:textSize="150sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+
+    <TextView
+        android:id="@+id/textViewPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stringLife2"
+        android:textSize="150sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plus_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:layout_marginStart="25sp"
+        android:clickable="true"
+        android:onClick="plusLifePlayer1"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewPlayer1"
+        app:srcCompat="@drawable/plussign" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/minus_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:layout_marginEnd="25sp"
+        android:clickable="true"
+        android:onClick="minLifePlayer1"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewPlayer1"
+        app:srcCompat="@drawable/minussign" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plus_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:layout_marginEnd="25sp"
+        android:clickable="true"
+        android:onClick="plusLifePlayer2"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewPlayer2"
+        app:srcCompat="@drawable/plussign" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/minus_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:layout_marginStart="25sp"
+        android:clickable="true"
+        android:onClick="minLifePlayer2"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewPlayer2"
+        app:srcCompat="@drawable/minussign" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="restartLife"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/restart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
